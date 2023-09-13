@@ -16,16 +16,27 @@ bhaskara0 = (b * b -4 * a * c)
 bhaskara1 = (-b + bhaskara0 **1// 2)
 bhaskara2 = (-b - bhaskara0 **1// 2)
 
+
+# functions for x1 and x2
+def x1():
+     print("Your first X is: " + bhaskara1)
+
+def x2():
+
+    print("Your second X is: " + bhaskara2)
+
+error = "There is not an answer :( "
+
+
 # Defining a function to give the answer to the user
 def answer():
 
     if bhaskara0 >= 0:
-        
-        print ("Your first X is: " + bhaskara1)
-        print ("Your second X is: " + bhaskara2)
+        x1()
+        x2()
 
     else:
-        print("there is not an answer")
+        print(error)
 
 # Calling the function
 answer()
